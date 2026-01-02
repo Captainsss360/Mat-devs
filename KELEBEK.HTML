@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kelebek Benzerliği | Detay</title>
+    <link rel="stylesheet" href="mat.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .detail-box { animation: slideUp 1s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+
+        .anim-frame {
+            border: 2px solid var(--pink); 
+            padding: 10px;
+            border-radius: 15px;
+            transition: 0.5s;
+            background: rgba(255, 0, 127, 0.05);
+            cursor: pointer;
+        }
+
+        .anim-frame:hover {
+            transform: scale(1.03) rotate(1deg);
+            box-shadow: 0 0 25px var(--pink);
+        }
+
+        .video-container { border-left: 5px solid var(--blue); padding-left: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <canvas id="snowCanvas"></canvas>
+
+    <div class="detail-box">
+        <button class="back-btn" onclick="goToPage('mat.html')">⬅ Ana Menüye Dön</button>
+        
+        <h1 class="glow" style="text-shadow: 0 0 15px var(--pink);">Kelebek Benzerliği</h1>
+        
+        <div class="content-text" style="margin-top: 20px;">
+            <p style="font-size: 1.2rem; line-height: 1.8;">
+                <strong>Nedir bu Kelebek?</strong><br>
+                İki paralel doğru arasında çapraz şekilde oluşan üçgenlere biz "Kelebek" veya "Kum Saati" diyoruz. Paralellik olduğu sürece, bu üçgenlerin kanatları arasındaki oran hep sabittir. Üst kanat ile alt kanat birbirinin belli bir katıdır!
+            </p>
+        </div>
+
+        <div class="anim-frame">
+            
+            <img src="fotolar/kelebek.jpg" class="detail-img" alt="Kelebek Benzerliği Şeması">
+            <p style="text-align: center; color: var(--pink); font-size: 0.9rem;">(Paralelliği fark etmek için resme odaklan)</p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.6); padding: 25px; border-radius: 15px; text-align: center; margin: 30px 0; border: 1px solid #333;">
+            <h4 style="color: var(--blue); margin-bottom: 15px;">Kelebek Oran Formülü</h4>
+            <div style="font-size: 1.8rem;">
+                $$\frac{A}{D} = \frac{B}{E} = \frac{C}{F} $$
+            </div>
+        </div>
+
+        <div class="video-container">
+            <h3 style="color: var(--pink); margin-bottom: 15px;">🎞️ Kelebek Benzerliği Videosu</h3>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 10px;">Ses gelmiyorsa oynatıcının sağ altındaki üç noktadan indirip izleyebilirsiniz.</p>
+            <video src="videolar/kelebek benzerliği.mp4" controls style="width:100%; border-radius:15px;"></video>
+        </div>
+    </div>
+
+    <script src="mat.java"></script>
+</body>
+</html>

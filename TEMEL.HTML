@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Temel Benzerlik Teoremi | Detay</title>
+    <link rel="stylesheet" href="mat.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .detail-box { animation: slideUp 1s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+
+        .anim-frame {
+            border: 2px solid #fff; 
+            padding: 10px;
+            border-radius: 15px;
+            transition: 0.4s;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .anim-frame:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+            border-color: var(--blue);
+        }
+
+        .video-container { border-left: 5px solid #fff; padding-left: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <canvas id="snowCanvas"></canvas>
+
+    <div class="detail-box">
+        <button class="back-btn" onclick="goToPage('mat.html')">⬅ Ana Menüye Dön</button>
+        
+        <h1 class="glow">Temel Benzerlik Teoremi</h1>
+        
+        <div class="content-text" style="margin-top: 20px;">
+            <p style="font-size: 1.2rem; line-height: 1.8;">
+                <strong>Temel Benzerlik Nedir?</strong><br>
+                Bir üçgenin içinde, bir kenara paralel çizilen doğru aslında yeni ve daha küçük bir üçgen yaratır. Bu küçük üçgen, büyük üçgenin genlerini taşır! Kenarlar arasındaki oran, tepe noktasından tabana doğru her zaman aynı kalır.
+            </p>
+        </div>
+
+        <div class="anim-frame">
+            
+            <img src="fotolar/temel.jpg" class="detail-img" alt="Temel Benzerlik Şeması">
+            <p style="text-align: center; color: #fff; font-size: 0.9rem;">(İç içe geçmiş benzerliği görüyorsun...)</p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.6); padding: 25px; border-radius: 15px; text-align: center; margin: 30px 0; border: 1px solid #333;">
+            <h4 style="color: var(--blue); margin-bottom: 15px;">Temel Orantı Teoremi</h4>
+            <div style="font-size: 1.8rem;">
+                $$\frac{a}{a+b} = \frac{c}{c+d} = \frac{e}{f}$$
+            </div>
+        </div>
+
+        <div class="video-container">
+            <h3 style="color: #fff; margin-bottom: 15px;">🎞️ Temel Benzerlik Videosu</h3>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 10px;">Ses sorunu yaşarsanız videoyu indirerek tüm sesleri duyabilirsiniz.</p>
+            <video src="videolar/temel benzerlik.mp4" controls style="width:100%; border-radius:15px;"></video>
+        </div>
+    </div>
+
+    <script src="mat.java"></script>
+</body>
+</html>

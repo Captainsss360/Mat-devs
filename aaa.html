@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>A.A.A. Benzerlik Teoremi | Detay</title>
+    <link rel="stylesheet" href="mat.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* Sadece bu sayfaya özel çıtır animasyonlar */
+        .detail-box {
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .anim-frame {
+            border: 2px solid var(--blue);
+            padding: 10px;
+            border-radius: 15px;
+            transition: 0.5s;
+            background: rgba(0, 242, 254, 0.05);
+            cursor: crosshair;
+        }
+
+        .anim-frame:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px var(--blue);
+            background: rgba(0, 242, 254, 0.1);
+        }
+
+        .video-container {
+            border-left: 5px solid var(--pink);
+            padding-left: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="snowCanvas"></canvas>
+
+    <div class="detail-box">
+        <button class="back-btn" onclick="goToPage('mat.html')">⬅ Ana Menüye Dön</button>
+        
+        <h1 class="glow">A.A.A. Benzerlik Teoremi</h1>
+        
+        <div class="content-text" style="margin-top: 20px;">
+            <p style="font-size: 1.2rem; line-height: 1.8;">
+                <strong>Nedir bu A.A.A?</strong><br>
+                İki üçgenin karşılıklı tüm açıları eşitse, bu üçgenler birbirinin kopyasıdır ama sadece boyutları farklıdır! 
+                Tıpkı bir fotoğrafı köşesinden tutup büyütmek gibi... Açılar değişmez, sadece kenarlar aynı oranda uzar veya kısalır.
+            </p>
+        </div>
+
+        <div class="anim-frame">
+            
+            <img src="fotolar/aa.jpg" class="detail-img" alt="A.A.A Benzerlik Şeması">
+            <p style="text-align: center; color: var(--blue); font-size: 0.9rem;">(Resmin üzerine gelince odaklanır)</p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.6); padding: 25px; border-radius: 15px; text-align: center; margin: 30px 0; border: 1px solid #333;">
+            <h4 style="color: var(--pink); margin-bottom: 15px;">Benzerlik Oranı (k)</h4>
+            <div style="font-size: 1.8rem;">
+                $$\frac{a}{d} = \frac{b}{e} = \frac{c}{f} $$
+            </div>
+        </div>
+
+        <div class="video-container">
+            <h3 style="color: var(--blue); margin-bottom: 15px;">🎞️ Konu Anlatım Videosu</h3>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 10px;">Ses gelmiyorsa lütfen  oynatıcının sağ alt ksımında 3 nokta var oraya basarak bilgisiyarınıza indirip izleyebbilirsiniz.</p>
+            <video src="videolar/aaaa.mp4" controls></video>
+        </div>
+    </div>
+
+    <script src="mat.java"></script>
+</body>
+</html>
